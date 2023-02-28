@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+body{
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: #FFDDAF;
+    color: #231;
+	margin: 0px;
+	padding: 0;
+	--margin_menu:20vh;
+}
+
+.ind {
+    margin: 40px;
+    color: #025167;
+    text-shadow: 0px 1px 1px black;
+}
+.ind input{
+	border-radius: 4px;
+	margin: 10px;
+}
+
+.error{
+	color: red;
+	font-size: 45px;
+}
+
+.container{
+	content: "12313";
+	padding-left: 10px;
+	padding-top: var(--margin_menu);
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+.container p{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+.container img{
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu p{
+    margin-top: 0px;
+}
+select { 
+    border: none;
+    border-radius: 7px;
+    padding: 10px 25px;
+    background: #401;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+  }
+  
+.inpt { 
+    border: none;
+    border-radius: 7px;
+    padding: 10px 25px;
+    background: #4313FF;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+  }
+  
+.inpt:hover { 
+    background: #8C6DD7;
+    text-underline-offset: 40;
+  } 
+  
+  @keyframes slidein {
+    from {
+      opacity: 0%;
+    }
+  
+    to {
+      opacity: 100%;
+    }
+  }

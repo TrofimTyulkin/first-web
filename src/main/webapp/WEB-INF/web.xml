@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" metadata-complete="true" version="2.5">
+  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <page-encoding>UTF-8</page-encoding>
+    </jsp-property-group>
+  </jsp-config>
+  
+  <servlet>
+    <servlet-name>HWServlet</servlet-name>
+    <servlet-class>com.servlets.calcServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HWServlet</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>personServlet</display-name>
+    <servlet-name>personServlet</servlet-name>
+    <servlet-class>com.servlets.personServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>personServlet</servlet-name>
+    <url-pattern>/person</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+    <error-code>404</error-code>
+    <location>/errors/404.html</location>
+  </error-page>
+  
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/errors/error.jsp</location>
+  </error-page>
+</web-app>
